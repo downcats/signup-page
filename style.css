@@ -137,6 +137,7 @@ input {
         height: auto;
         max-height: 100vh;
         text-align: center;
+        min-width: 400px;
     }
 
     .sidebar {
@@ -147,8 +148,8 @@ input {
     }
 
     .image {
-        height: 20vh;
-        min-height: 20vh;
+        height: 25vh;
+        min-height: 25vh;
         position: absolute;
         width: 100vw;
         background-image: url("./img/evan-wise-v7MuTvQZkQU-unsplash.jpg");
@@ -167,7 +168,7 @@ input {
         height: 10vh;
         width: 100%;
         background-color: rgba(0, 0, 0, 0.5);
-        position: absolute;
+        position: relative;
         color: white;
         top: 10%;
         font-size: 3em;
