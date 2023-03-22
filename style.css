@@ -1,0 +1,241 @@
+body {
+    margin: 0px;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.sidebar {
+    min-width: 35vw;
+    min-height: 100vh;
+}
+
+.image {
+    height: 100vh;
+    min-height: 100%;
+    position: fixed;
+    width: 35vw;
+    background-image: url("./img/evan-wise-v7MuTvQZkQU-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+.logo img {
+    max-width: 15%;
+}
+
+.logo {
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: 20vh;
+    gap: 1vw;
+    padding: 15px 0;
+    display: flex;
+    color: white;
+    font-size: 32px;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    gap: 3vh;
+    width: 75vw;
+    height: 100vh;
+    min-width: auto;
+    min-height: auto;
+}
+
+.header {
+    font-weight: bold;
+    width: 75%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-left: 10%;
+    padding-top: 5%;
+    font-size: 1.5em;
+}
+
+.name, .contact, .password {
+    display: flex;
+    gap: 100px;
+    margin-bottom: 10px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-bottom: 5%;
+    padding-top: 3%;
+    background-color: white;
+    height: auto;
+    box-shadow: 0px 3px 3px 0px lightgrey;
+}
+
+.form-header {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.form-inputs {
+    font-size: .75em;
+}
+
+input {
+    padding: 5px;
+    width: 13vw;
+    border-radius: 3px;
+    border: 1px grey solid;
+}
+
+.form-inputs input:focus {
+    border: 3px lightblue solid;
+    box-shadow: 2px 2px 2px grey;
+}
+
+.footer {
+    padding-left: 10%;
+    height: auto;
+    min-height: 21%;
+    background-color: whitesmoke;
+}
+
+.footer input {
+    width: 150px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: #596D48;
+    color: white;
+    font-size: 1em;
+    box-shadow: 10px grey;
+}
+
+.footer p {
+    padding-top: 15px;
+    font-size: 1em;
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+        max-height: 100vh;
+        text-align: center;
+    }
+
+    .sidebar {
+        width: 100vw;
+        height: 25vh;
+        display: flex;
+        min-height: 25vh;
+    }
+
+    .image {
+        height: 20vh;
+        min-height: 20vh;
+        position: absolute;
+        width: 100vw;
+        background-image: url("./img/evan-wise-v7MuTvQZkQU-unsplash.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border: none;
+    }
+
+    .logo img {
+        max-width: 15%;
+        min-width: 15%;
+    }
+    
+    .logo {
+        height: 10vh;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        color: white;
+        top: 10%;
+        font-size: 3em;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-content {
+        background-color: whitesmoke;
+        gap: 3vh;
+        width: 100vw;
+        height: auto;
+        min-width: 100vw;
+        min-height: auto;
+        text-align: center;
+    }
+
+    .header {
+        font-weight: 100;
+        width: 80%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        padding-top: 5%;
+        font-size: 1.5em;
+    }
+
+    .name, .contact, .password {
+        display: inline;
+        gap: 100px;
+        margin-bottom: 10px;
+    }
+
+    .form-header {
+        font-size: 1.6em;
+        font-weight: 100;
+    }
+    
+    .form-inputs {
+        font-size: 1em;
+    }
+
+    .form {
+        align-items: center;
+        padding-left: 0%;
+    }
+    
+    input {
+        padding: 5px;
+        margin: 20px;
+        width: 40vw;
+        border-radius: 3px;
+        border: 2px grey solid;
+    }
+
+    .footer {
+        padding-left: 0%;
+    }
+    
+    .footer input {
+        width: 170px;
+        height: 40px;
+    }
+    
+    .footer p {
+        padding-top: 0px;
+        font-size: 1em;
+    }
+}
